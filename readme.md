@@ -6,3 +6,5 @@ Usage:
 ```batch
 py run.py neocitiesusername neocitiespassword
 ```
+
+[An example](https://scambait.neocities.org/).

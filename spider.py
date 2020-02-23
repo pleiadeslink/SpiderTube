@@ -7,6 +7,7 @@ class spider(scrapy.Spider):
     name = "Spider"
     vname = ""
     vlink = ""
+    vmeta = ""
 
     def __init__(self, domain='', *args, **kwargs):
         super(spider, self).__init__(*args, **kwargs)
@@ -36,7 +37,7 @@ class spider(scrapy.Spider):
         for video in response.css(SET_SELECTOR):
             NAME_SELECTOR = "a ::text"
             LINK_SELECTOR = "a ::attr(href)"
-            META_SELECTOR = ""
+            META_SELECTOR = ".yt-lockup-meta-info"
             vname = video.css(NAME_SELECTOR).extract_first()
             vlink = video.css(LINK_SELECTOR).extract_first()
             videolist.write('> <a href="http://youtube.com' + vlink + '">' + vname + '</a><br />\n')
