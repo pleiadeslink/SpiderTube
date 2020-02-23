@@ -1,0 +1,6 @@
+24/02/20
+- Website generation
+- Neocities automatic upload
+
+23/02/20
+- Initial spider behavior
