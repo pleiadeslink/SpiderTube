@@ -1,3 +1,6 @@
+0.3
+- Website options are loaded from a JSON file.
+
 0.2
 - Website generation
 - Neocities automatic upload
